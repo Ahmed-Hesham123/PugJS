@@ -1,0 +1,29 @@
+include components/vars
+doctype html
+html(lang="ar")
+  head
+    include components/inhead
+    title learn css in 1hr
+  body
+    include components/header
+    main
+      section
+        h1 أنا مين ؟
+        .flex
+          article.left-section
+            h3 هدفى
+            p
+              | هو إِثراء المُحتوى العربى بمحتوى تعليمى مُتميز عن طريق
+              br
+              | التعليم القائم على المشاريع
+            a.youtube(href="")  youtube 
+            a.facebook(href="")  facebook 
+          article.right-section
+            img.my-img(src="me-28dd1fbca7dfd2d37a8358163c6f9677.png" alt="")
+            h5 Ali Hassan
+            p.para انا الي ضاع من عُمري سنين
+      section
+        h1 Products
+        h3 #{price}
+        button Buy
+    include components/footer
